@@ -11,64 +11,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
-<body style="width-max:1440 px; margin:30px">
-    <div class="main-container">
-	
-        <header>
-			<img src="images/logo/booki.png" alt="" style="width:90px">
-		
-		
+<body>
+
+        <header class="header">
+			<div class="img-logo">
+				<img src="images/logo/booki.png" alt="" style="width:61.09px">
+			</div>
+			
+			<nav class="nav-header">
+				<a href="#hebergement">
+					<div class="lien-header" id="lien-hebergement">Hébergements
+					</div>
+				</a>
+				
+				<a href="#activites">
+					<div class="lien-header" id="lien-activites">Activités
+					</div>
+				</a>
+
+			</nav>
 		</header>
+
+    <!--div class="main-container"-->
 		
-		<br><br>
 		<nav class="nav-search">
 			<div class="title-search">
-				<h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
+				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<div class="description">En plein centre-ville ou en pleine nature</div>
 			</div>
 			<section class="search" >
-				<form style="display: flex; gap:24px">
+				<form style="display: flex; gap:24px; border: 1px solid #F2F2F2;">
 				<input type="image" src="images/logo/Group15.svg">
-				<input type="text" style="text-align: center;font-family: Raleway;font-size: 18px;font-style: normal;font-weight: 700;line-height: normal;"/>
-				<button type="submit" style="background: var(--Blue, #0065FC);border-radius: 0px 15px 15px 0px; border: 1px solid var(--Blue, #0065FC); color:white; font-family: Raleway; font-style: normal; font-weight: 700; line-height: normal; font-size: 18px;">Rechercher</button>
+				<input type="text" style="text-align: center; font-family: Raleway; font-size: 18px; font-style: normal; font-weight: 700; line-height: normal; border:0px"/>
+				<button type="submit" style="background: #0065FC ;border-radius: 0px 15px 15px 0px; border: 1px solid #0065FC; padding: 15px 16px; color:white; font-family: Raleway; font-style: normal; font-weight: 700; line-height: normal; font-size: 18px; cursor:pointer;">Rechercher</button>
 				</form>
 			</section>
 			
 			<div class="filtres">
-				<h4 class="title-filtres">
+				<h2 class="title-filtre">
 				Filtres
-				</h4>
+				</h2>
 				
-				<h4 class="font-filtres">Économique
-				</h4>
+				<div class="filtre-compartiment">
+					<div class="filtre-icon">
+						<img src="images/logo/Icon.svg" alt=""   />
+					</div>
+					<div class="font-filtre">Économique
+					</div>
+				</div>
 				
-				<h4 class="font-filtres">
-				Familial
-				</h4>
+				<div class="filtre-compartiment">
+					<div class="filtre-icon">
+						<img src="images/logo/Icon1.svg" alt=""   />
+					</div>
+					<div class="font-filtre">Familial
+					</div>
+				</div>
+				
+				<div class="filtre-compartiment">
+					<div class="filtre-icon">
+						<img src="images/logo/Icon2.svg" alt=""   />
+					</div>
+					<div class="font-filtre">Romantique
+					</div>
+				</div>
 
-				<h4 class="font-filtres">
-				Romantique
-				</h4>
-
-				<h4 class="font-filtres">
-				Nos pépites
-				</h4>
+				<div class="filtre-compartiment">
+					<div class="filtre-icon">
+						<img src="images/logo/Icon3.svg" alt=""   />
+					</div>
+					<div class="font-filtre">Nos pépites
+					</div>
+				</div>
 
 			</div>
-			
+			<div class="bouton-i">
+				<img src="images/logo/Icon4.svg" alt=""   />
+				<div class="description">Plus de 500 logements sont disponibles dans cette ville</div>
+			</div>
 		</nav>
-		<br><br>
+		
         <main>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
-					<div class="hebergements-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
-                        <!--i class="fa-solid fa-chart-line" aria-hidden="true"></i-->
-                    </div>
+                <section id="hebergement" class="hebergements">
+					
+                    <h1>Hébergements à Marseille</h1>
+                    
 					<div class="hebergements-cards">
 						<a href="#">
 							<article class="card" >
@@ -202,7 +234,7 @@
 				
                 <section class="populaires">
                     <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2>
+                        <h1>Les plus populaires</h1>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
@@ -267,46 +299,101 @@
                 </section>
             </div>
         </main>
-        <footer style="padding:20px">
-		<div style="display:inline-block">
-			<div style="font-weight:bold; margin-bottom:15px">
-			À propos
+		
+		<section class="activite-section">
+		
+			<h1>Activités à Marseille
+            </h1>
+			
+			<div class="cards-activites">
+			
+				<article class="activite ">
+				<a href="#">
+					<img src="images/activites/reno-laithienne.jpg" alt="Image du lieu de l'activité">
+					
+					<div class="card-title description-activite">
+					Vieux-Port
+					</div>
+					</a>
+				</article>
+				
+				
+				<article class="activite ">
+				<a href="#">
+					<img src="images/activites/paul-hermann.jpg" alt="Image du lieu de l'activité">
+						
+					<div class="card-title description-activite">
+					Fort de Pomègues
+					</div>
+					</a>
+				</article>
+				
+				
+				<article class="activite">
+				<a href="#">
+					<img src="images/activites/kilyan-sockalingum.jpg" alt="Image du lieu de l'activité">
+					
+					<div class="card-title description-activite">
+					Parc national des Calanques
+					</div>
+					</a>
+				</article>
+				
+				
+				<article class="activite">
+				<a href="#">
+					<img src="images/activites/florian-wehde.jpg" alt="Image du lieu de l'activité">
+					
+					<div class="card-title description-activite">
+					Notre-Dame-de-la-Garde
+					</div>
+					</a>
+				</article>
+				
 			</div>
-			<div style="margin-bottom:15px">
-			Fonctionnement du site
+			
+		</section>
+		
+        <footer class="section-footer">
+			<div class="footer-card">
+				<h2>
+				À propos
+				</h2>
+				<div>
+				Fonctionnement du site
+				</div>
+				<div>
+				Conditions générales
+				</div>
+				<div>
+				Données et confidentialité
+				</div>
 			</div>
-			<div style="margin-bottom:15px">
-			Conditions générales
+			<div class="footer-card">
+				<h2>
+				Nos hébergements
+				</h2>
+				<div>
+				Charte qualité
+				</div>
+				<div>
+				Proposer votre hôtel
+				</div>
 			</div>
-			<div>
-			Données et confidentialité
+			<div class="footer-card">
+				<h2>
+				Assitance
+				</h2>
+				<div>
+				Centre d'aide
+				</div>
+				<div>
+				Nous contacter
+				</div>
 			</div>
-		</div>
-		<div style="display:inline-block">
-			<div style="font-weight:bold; margin-bottom:15px">
-			Nos hébergements
-			</div>
-			<div style="margin-bottom:15px">
-			Charte qualité
-			</div>
-			<div style="margin-bottom:15px">
-			Proposer votre hôtel
-			</div>
-		</div>
-		<div style="display:inline-block">
-			<div style="font-weight:bold; margin-bottom:15px">
-			Assitance
-			</div>
-			<div style="margin-bottom:15px">
-			Centre d'aide
-			</div>
-			<div style="margin-bottom:15px">
-			Nous contacter
-			</div>
-		</div>
 
 		</footer>
-    </div>
+    <!--/div-->
 </body>
 
 </html>
