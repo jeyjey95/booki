@@ -14,17 +14,22 @@
 .fa-solid {
     color: var(--main-color);
 }
+html{
+	widtht: 1440px;
+}
 
 body {
     display: flex;
 	padding: 0px 50px;
 	widtht: 1440px;
+	padding-bottom: 58px;
     max-width: 1440px;
-
+flex-shrink: 0;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items:center;
+	box-sizing: border-box;
 	gap: 35px;
-	align-self: stretch;
+	align-selft: stretch;
 }
 
 h1{
@@ -39,13 +44,6 @@ h2{
 }
 
 
-.main-container {
-	display:flex;
-	flex-direction: column;
-    padding: 0 50px;
-    box-sizing: border-box;
-	flex-shrink: 0;
-}
 
 a {
     color: inherit;
@@ -81,7 +79,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width:100%;
-	max-width:1440px;
+	box-sizing: border-box;
 }
 
 .img-logo{
@@ -96,7 +94,7 @@ a {
 	justify-content: flex-end;
 	gap: 68px;
 	font-size:16px;
-	padding:0px 50px;
+	paddingt:0px 50px;
 	vertical-align:middle;
 	align-items:start;
 	line-height: normal;
@@ -124,6 +122,8 @@ a {
 	display: flex;
 	flex-direction: column;
 	gap: 35px;
+	width:100%;
+	box-sizing: border-box;
 }
 
 .title-search{
@@ -194,9 +194,20 @@ a {
 
 
 /****** Hebergements And Populaires ***********/
+
+.main-container {
+	display:flex;
+	flex-direction: column;
+    padding: 0 50px;
+    box-sizing: border-box;
+	flex-shrink: 0;
+}
+
+
+
 .hebergements-and-populaires {
     display: flex;
-	outline: 1px solid red;
+	outlinet: 1px solid red;
 	align-items: center;
 	gap: 40px;
 	align-self: stretch;
@@ -205,7 +216,7 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-	outline: 1px solid green;
+	outlinet: 1px solid green;
 }
 
 
@@ -217,6 +228,7 @@ a {
 	align-items: center;
 	gapt: 30px;
 	align-self: stretch;
+	box-sizing: border-box;
 	
 }
 /****** Hebergements ***********/
@@ -229,13 +241,14 @@ a {
 	gap: 30px;
 	flext: 1 0 0;
 	align-self: stretch;
+	box-sizing: border-box;
 	
 }
 
 .hebergements-cards a {
        width: 30%;
 	   align-items: center;
-	   outline: 1px solid orange;
+	   outlinet: 1px solid orange;
 	   
     }
 
@@ -243,6 +256,7 @@ a {
 .populaires-title {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	align-self: stretch;
 }
 
@@ -256,7 +270,7 @@ a {
 	flex-directiont: row;
 	widtht:83%;
 	justify-content: space-between;
-	outline: 1px solid black;
+	outlinet: 1px solid black;
 	flext: 1 1 auto;
 }
 
@@ -274,7 +288,7 @@ a {
     display: flex;
 	width:100%;
 	box-sizing: border-box;
-	background:yellow;
+	backgroundt:yellow;
 	flex-direction: column;
 	align-items: center;
 	box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
@@ -302,6 +316,7 @@ a {
 	align-self: stretch;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+	object-fit: cover;
 }
 
 
@@ -354,33 +369,39 @@ a {
 	padding: 30px;
 	flex-direction: column;
 	gap: 30px;
-	flex: 1 0 0;
-	align-self: stretch;
-	border: 1px olive solid;
+	flext: 1 0 0;
+	align-selft: stretch;
+	bordert: 1px blue solid;
 	box-sizing: border-box;
+	border:0px;
+	margin:0px;
 }
 .cards-activites {
 	display: flex;
 	gap: 30px;
 	object-fit: cover;
-	flex: 1 0 0;
 	flext: 1 0 0;
 	align-selft: stretch;
-	box-sizing: border-box;
+	box-sizingt: border-box;
 }
 
 .activite {
 	display: flex;
+	height: 439px;
 	flex-direction: column;
-	flex: 1 0 0;
 	border-radius: 20px;
+	box-sizingt: border-box;
 /* Shadow/Card */
 box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-	flext: 1 0 0;
+flex: 1 1 0;
+line-height: 15px;
+margin:0px;
+border:0px;
 	align-selft: stretch;
 }
 .description-activite {
 	padding: 20px 19px;
+	margin:0px;
 }
 
 .section-footer {
@@ -388,6 +409,7 @@ box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 	align-items: flex-start;
 	align-self: stretch;
 	background:#F2F2F2;
+	box-sizing: border-box;
 }
 .footer-card {
 	width:100%;
