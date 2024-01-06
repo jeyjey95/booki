@@ -602,14 +602,14 @@ a {
 		border-radius:0px;
 	}
 
-	.populaires	{
+	.populaires{
 		min-width:auto;
 		max-width:767px;
 		gap:15px;
 		padding:30px 20px;
 	}
 		
-	.populaires-cards {
+	.populaires-cards{
 		flex-direction: column;
 		gap:15px;
 	}
